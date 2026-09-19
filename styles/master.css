@@ -219,3 +219,52 @@ h2 {
   line-height: 29px;
   color: #fff;
 }
+
+/* contacts section */
+
+.contacts {
+  background-image: url(../edits/contacts-fullscr.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container--contacts {
+  position: relative;
+  padding-bottom: 0;
+
+  height: 717px;
+}
+
+.contacts-wrap {
+  position: absolute;
+  bottom: 89px;
+
+  width: 310px;
+}
+
+.contacts-wrap h2 {
+  margin-bottom: 28px;
+
+  font-size: 35px;
+  line-height: 171%;
+  color: #fff;
+}
+
+.contacts-wrap__link {
+  display: block;
+  margin-bottom: 20px;
+
+  font-size: 60px;
+  line-height: 100%;
+  color: #fff;
+  text-decoration: none;
+}
+
+.contacts-wrap__link:last-child {
+  margin-bottom: 0;
+}
+
+.contacts-wrap__link:hover {
+  color: #1bff07;
+}
