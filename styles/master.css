@@ -1,5 +1,11 @@
 body {
-    letter-spacing: -0.03em;
+  letter-spacing: -0.03em;
+}
+
+header,
+section,
+footer {
+  min-width: 1150px;
 }
 
 header,
@@ -8,23 +14,22 @@ main {
   font-weight: 400;
 }
 
-main {
+section {
   background-color: #000;
 }
 
 .container {
   padding-bottom: 150px;
   margin: 0 auto;
-  width: 1155px;
+  width: 1150px;
 }
 
 h2 {
   color: #fff;
   letter-spacing: -0.03em;
-
 }
 
-/* cases */
+/*Cases section*/
 
 .container--cases {
   padding-top: 150px;
@@ -98,4 +103,67 @@ h2 {
   color: #1bff07;
   background-color: #000;
   border: 1px solid #1bff07;
+}
+
+/* Skills section */
+
+.container--slills h2 {
+  margin-bottom: 104px;
+  font-size: 55px;
+  line-height: 72px;
+}
+
+.skill-item {
+  padding-bottom: 120px;
+}
+
+.skill-item:last-child {
+  padding-bottom: 0;
+}
+
+.skill-item {
+  position: relative;
+}
+
+.skill-item::before {
+  position: absolute;
+  top: -60px;
+  left: 2px;
+  content: '';
+
+  width: 45px;
+  height: 44px;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.skill-item:nth-child(1):before {
+  background-image: url(../edits/htmlcss-before.png);
+}
+
+.skill-item:nth-child(2):before {
+  background-image: url(../edits/js-before.png);
+}
+
+.skill-item:nth-child(3):before {
+  background-image: url(../edits/framework-before.png);
+}
+
+.skill-item:nth-child(4):before {
+  background-image: url(../edits/adapt-before.png);
+}
+
+.skill-item__name {
+  margin-bottom: 16px;
+
+  font-size: 35px;
+  line-height: 46px;
+  color: #1bff07;
+}
+
+.skill-item__about {
+  font-size: 22px;
+  line-height: 29px;
+  color: #fff;
 }
