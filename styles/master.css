@@ -1,0 +1,101 @@
+body {
+    letter-spacing: -0.03em;
+}
+
+header,
+main {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 400;
+}
+
+main {
+  background-color: #000;
+}
+
+.container {
+  padding-bottom: 150px;
+  margin: 0 auto;
+  width: 1155px;
+}
+
+h2 {
+  color: #fff;
+  letter-spacing: -0.03em;
+
+}
+
+/* cases */
+
+.container--cases {
+  padding-top: 150px;
+}
+
+.container--cases h2 {
+  margin-bottom: 40px;
+  font-size: 55px;
+  line-height: 72px;
+}
+
+.cases-item {
+  position: relative;
+  width: 1150px;
+  height: 550px;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.cases-item:nth-child(1) {
+  background-image: url(../edits/realhome-img.png);
+}
+
+.cases-item:nth-child(2) {
+  background-image: url(../edits/glass-img.png);
+}
+
+.cases-item:nth-child(3) {
+  margin-bottom: 80px;
+  background-image: url(../edits/fesiyen-img.png);
+}
+
+.cases-item__wrap {
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
+}
+
+.cases-item__name {
+  margin-bottom: 5px;
+  font-size: 35px;
+  line-height: 46px;
+  color: #fff;
+}
+
+.cases-item__about {
+  font-size: 30px;
+  line-height: 39px;
+  color: #fff;
+}
+
+.button {
+  display: inline-block;
+  padding-top: 56px;
+
+  width: 582px;
+  height: 153px;
+
+  border-radius: 10px;
+  border: 1px solid #1bff07;
+  background-color: #1bff07;
+  font-size: 30px;
+  line-height: 39px;
+  text-align: center;
+  color: #000;
+  text-decoration: none;
+}
+
+.button:hover {
+  color: #1bff07;
+  background-color: #000;
+  border: 1px solid #1bff07;
+}
