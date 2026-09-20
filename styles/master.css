@@ -1,11 +1,13 @@
 body {
   letter-spacing: -0.03em;
+  background-color: #000;
 }
 
 header,
 section,
 footer {
-  min-width: 1150px;
+  /* я не понял, что сделал, но оказалосб верно*/
+  min-width: 1500px;
 }
 
 header,
@@ -14,9 +16,9 @@ main {
   font-weight: 400;
 }
 
-section {
+/* main {
   background-color: #000;
-}
+} */
 
 .container {
   padding-bottom: 150px;
@@ -27,6 +29,76 @@ section {
 h2 {
   color: #fff;
   letter-spacing: -0.03em;
+}
+
+/* Header */
+
+header {
+  height: 765px;
+
+  background-image: url(../edits/photo-full.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container--header {
+  position: relative;
+  padding-top: 36px;
+  padding-bottom: 0;
+
+  height: 100%;
+}
+
+.header-logo {
+  width: 130px;
+  height: 55px;
+}
+
+.nav {
+  padding-top: 10px;
+  float: right;
+}
+
+.nav__link {
+  display: inline-block;
+  margin-right: 50px;
+
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+  line-height: 23px;
+}
+
+.nav__link:last-child {
+  margin-right: 0;
+}
+
+.nav__link:hover {
+  color: #1bff07;
+}
+
+.about-me-wrap {
+  position: absolute;
+  bottom: 94px;
+}
+
+.about-me-wrap p {
+  margin-bottom: 29px;
+  width: 430px;
+
+  font-size: 20px;
+  letter-spacing: -0.03em;
+  color: #fff;
+  line-height: 25.75px;
+}
+
+h1 {
+  width: 919px;
+
+  font-size: 80px;
+  line-height: 88%;
+  color: #1bff07;
 }
 
 /*Cases section*/
@@ -227,6 +299,7 @@ h2 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  border-radius: 30px;
 }
 
 .container--contacts {
@@ -238,7 +311,8 @@ h2 {
 
 .contacts-wrap {
   position: absolute;
-  bottom: 89px;
+  bottom: 95px;
+  left: 2px;
 
   width: 310px;
 }
@@ -267,4 +341,40 @@ h2 {
 
 .contacts-wrap__link:hover {
   color: #1bff07;
+  /* text-decoration: underline; */
+}
+
+/* Bridge */
+
+.bridge {
+  height: 180px;
+}
+
+/* footer */
+
+.footer {
+  font-family: 'Manrope', sans-serif;
+  background-color: #fff;
+  border-radius: 24px 24px 0 0;
+}
+
+.container--footer {
+  padding: 76px 0 69px 0;
+
+  background: #fff;
+  border-radius: 30px;
+}
+
+.container--footer h2 {
+  margin-bottom: 25.5px;
+
+  font-size: 22px;
+  line-height: 30px;
+  color: #000;
+}
+
+.container--footer p {
+  font-size: 20px;
+  color: #000;
+  opacity: 0.5;
 }
