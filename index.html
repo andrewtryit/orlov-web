@@ -24,12 +24,14 @@
   <body>
     <header class="header">
       <div class="container container--header">
-        <img src="edits/logo.png" alt="логотип бренда" class="header-logo" />
+        <a href="/" class="logo-link"
+          ><img src="edits/logo.png" alt="логотип бренда"
+        /></a>
         <nav class="nav">
-          <a href="/" class="nav__link">портфолио</a>
-          <a href="/" class="nav__link">компетенции</a>
-          <a href="/" class="nav__link">услуги</a>
-          <a href="/" class="nav__link">контакты</a>
+          <a href="#portfolio" class="nav__link">портфолио</a>
+          <a href="#competencies" class="nav__link">компетенции</a>
+          <a href="#services" class="nav__link">услуги</a>
+          <a href="#contacts" class="nav__link">контакты</a>
         </nav>
 
         <div class="about-me-wrap">
@@ -44,7 +46,7 @@
     <main>
       <section class="cases">
         <div class="container container--cases">
-          <h2>Самые свежие проекты</h2>
+          <h2 id="portfolio">Самые свежие проекты</h2>
           <ul class="cases-list">
             <li class="cases-item">
               <div class="cases-item__wrap">
@@ -72,7 +74,7 @@
         </div>
       </section>
 
-      <section class="skills">
+      <section id="competencies" class="skills">
         <div class="container container--slills">
           <h2>Мои компетенции</h2>
           <ul class="skills-list">
@@ -128,7 +130,7 @@
         </div>
       </section>
 
-      <section class="services">
+      <section id="services" class="services">
         <div class="container container--services">
           <h2>
             Помогаю реализовать<br />
@@ -192,7 +194,7 @@
         </div>
       </section>
 
-      <section class="contacts">
+      <section id="contacts" class="contacts">
         <div class="container container--contacts">
           <div class="contacts-wrap">
             <h2>для связи:</h2>
