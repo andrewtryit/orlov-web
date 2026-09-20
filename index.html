@@ -13,9 +13,34 @@
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header class="header"></header>
+    <header class="header">
+      <div class="container container--header">
+        <img src="edits/logo.png" alt="логотип бренда" class="header-logo" />
+        <nav class="nav">
+          <a href="/" class="nav__link">портфолио</a>
+          <a href="/" class="nav__link">компетенции</a>
+          <a href="/" class="nav__link">услуги</a>
+          <a href="/" class="nav__link">контакты</a>
+        </nav>
+
+        <div class="about-me-wrap">
+          <p>
+            Разрабатываю имиджевые сайты для малого и среднего бизнеса, которые
+            повышают престиж компании и позволяют выделиться на фоне конкурентов
+          </p>
+          <h1>Привет, я Саша — фронтенд разработчик и дизайнер сайтов</h1>
+        </div>
+      </div>
+    </header>
     <main>
       <section class="cases">
         <div class="container container--cases">
@@ -167,8 +192,27 @@
         </div>
       </section>
 
-      <section class="contacts"></section>
+      <section class="contacts">
+        <div class="container container--contacts">
+          <div class="contacts-wrap">
+            <h2>для связи:</h2>
+            <a href="/" class="contacts-wrap__link">instagram</a>
+            <a href="/" class="contacts-wrap__link">telegram</a>
+            <a href="mailto:example@mail.com" class="contacts-wrap__link"
+              >mail</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="bridge"></section>
     </main>
-    <footer class="footer"></footer>
+
+    <footer class="footer">
+      <div class="container container--footer">
+        <h2>Портфолио фротнтенд-разработчика Саши Орлова</h2>
+        <p>Все права защищены. 2023</p>
+      </div>
+    </footer>
   </body>
 </html>
