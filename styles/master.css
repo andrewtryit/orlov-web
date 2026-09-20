@@ -10,7 +10,7 @@ body {
 header,
 section,
 footer {
-  /* я не понял, что сделал, но оказалосб верно*/
+  /* я не понял, что сделал, но оказалось верно*/
   min-width: 1500px;
 }
 
@@ -240,6 +240,8 @@ h1 {
 }
 
 .skill-item__about {
+  width: 778px;
+
   font-size: 22px;
   line-height: 29px;
   color: #fff;
@@ -292,6 +294,8 @@ h1 {
 }
 
 .service-item__about {
+  width: 749px;
+
   font-size: 22px;
   line-height: 29px;
   color: #fff;
