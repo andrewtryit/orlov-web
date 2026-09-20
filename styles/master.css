@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   letter-spacing: -0.03em;
   background-color: #000;
@@ -6,7 +10,7 @@ body {
 header,
 section,
 footer {
-  /* я не понял, что сделал, но оказалосб верно*/
+  /* я не понял, что сделал, но оказалось верно*/
   min-width: 1500px;
 }
 
@@ -15,10 +19,6 @@ main {
   font-family: 'IBM Plex Mono', monospace;
   font-weight: 400;
 }
-
-/* main {
-  background-color: #000;
-} */
 
 .container {
   padding-bottom: 150px;
@@ -50,7 +50,7 @@ header {
   height: 100%;
 }
 
-.header-logo {
+.logo-link img {
   width: 130px;
   height: 55px;
 }
@@ -64,6 +64,8 @@ header {
   display: inline-block;
   margin-right: 50px;
 
+  transition: color 0.3s ease 0s;
+
   text-decoration: none;
   font-size: 18px;
   color: #fff;
@@ -76,6 +78,7 @@ header {
 
 .nav__link:hover {
   color: #1bff07;
+  /* text-decoration: underline; */
 }
 
 .about-me-wrap {
@@ -161,6 +164,8 @@ h1 {
   width: 582px;
   height: 153px;
 
+  transition: color 0.3s ease 0s;
+
   border-radius: 10px;
   border: 1px solid #1bff07;
   background-color: #1bff07;
@@ -235,6 +240,8 @@ h1 {
 }
 
 .skill-item__about {
+  width: 778px;
+
   font-size: 22px;
   line-height: 29px;
   color: #fff;
@@ -287,6 +294,8 @@ h1 {
 }
 
 .service-item__about {
+  width: 749px;
+
   font-size: 22px;
   line-height: 29px;
   color: #fff;
@@ -328,6 +337,8 @@ h1 {
 .contacts-wrap__link {
   display: block;
   margin-bottom: 20px;
+
+  transition: color 0.3s ease 0s;
 
   font-size: 60px;
   line-height: 100%;
@@ -378,3 +389,8 @@ h1 {
   color: #000;
   opacity: 0.5;
 }
+
+/* основные ошибки:
+1. незначимые изображения можно добавлять через css, несущие суть - через html
+2. стараться не юзать позиционирование для блоков, в принципе не юзать его слишком часто
+3. аккуратно работать с padding у блоков, height!!!!*/
